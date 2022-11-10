@@ -1,0 +1,193 @@
+/* Custom page CSS */
+* {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  border-bottom-width: 8px;
+  border-bottom-style: solid;
+  -o-border-image: linear-gradient(to right, #82CA6F, #75C8F2, #9071AF, #B65CA0, #F8BE63) 1;
+     border-image: linear-gradient(to right, #82CA6F, #75C8F2, #9071AF, #B65CA0, #F8BE63) 1;
+}
+
+.mr-y{
+  margin-top: 4em;
+  margin-bottom: 4rem;
+}
+.mr-x{
+  margin-right: 7rem;
+  margin-left: 7rem;
+}
+.round{
+  border-radius: 2rem;
+}
+.img-box{
+  background-color: #b7b7b7;
+  width: 12rem;
+  height: 12rem;
+}
+.custom-file-upload{
+  background-color: #5A407A;
+  border-radius: 2rem;
+}
+
+
+
+.disp-off-login-2 {
+  display: none;
+}
+
+.font-tam {
+  font-size: 3.5rem;
+}
+
+.img-store {
+  width: 100px;
+  height: 50px;
+}
+
+.img-storee {
+  width: 108px;
+  height: 50px;
+}
+
+.no-show {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  color: #5A407A;
+}
+
+.description {
+  border: 2px solid #9B46BB;
+  border-radius: 7px;
+  background-color: #c9c9c9;
+}
+
+.containder-img {
+  width: 200px;
+  height: 200px;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .disp-off-login {
+    display: none;
+  }
+
+  .disp-off-login-2 {
+    display: block;
+  }
+
+  .mx-4 {
+    margin: 1rem !important;
+  }
+
+  .ms-5 {
+    margin-left: 0.5rem !important;
+  }
+
+  .img-store, .img-storee {
+    width: 75px;
+  } 
+}
+
+@media only screen and (max-width: 425px){
+  .mr-y{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .mr-x{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  .disp-off {
+    display: none;
+  }
+  .mr-y{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .mr-x{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 815px) {
+  .disp-off-login {
+    display: none;
+  }
+
+  .disp-off-login-2 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .mr-x{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media only screen and (min-width:992px) and (max-width: 1444px) {
+  .mr-x{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .me-5 {
+    margin-right: 0;
+  }
+
+  .mt-5 {
+    margin-top: 0;
+  }
+
+  .ms-5 {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .img-container{
+    width: 250px;
+    height: 250px;
+  }
+  .mr-y{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+
+.prof-img{
+  object-fit: scale-down;
+}
+
+/* Not required for template or sticky footer method. */
+
+main > .container {
+  padding: 60px 15px 0;
+}
+

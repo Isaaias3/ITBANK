@@ -1,0 +1,72 @@
+{% extends 'homebanking/home.html' %}
+{% load static %}
+
+{% block title %}Edit Profile {% endblock %}
+
+{% block content %}
+
+<main class="flex-shrink-0 mr-y mr-x">
+    <div class="row justify-content-lg-end justify-content-center">
+        <div class="col col-lg-8 round mt-4" style="background-color: #eeeeee; opacity: 0.85;">
+            <form class="row" method="POST" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="col col-lg-5 col-md-4 form-login mt-5">
+                    <div class="">
+                        <div class="my-4 mx-auto round img-box" style="background-color: #b7b7b7;">
+                            <img class="p-2 round" src="{% static 'app_base/img/sofia.png' %}" id="imagenPrevisualizacion" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="my-4 text-center">
+                            <label class="btn text-light rounded-4 p-2" style="background-color: #5a407a;">
+                                <input type="file" name="img_profile" id="seleccionArchivos" accept="image/*" style="display: none;"/>
+                                Subir archivo
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col form-login me-3">       
+                    <div class="my-4">
+                        <p class="fs-4" style="border-bottom: solid black 2px;">Registrarme</p>
+                    </div>
+                    <div class="form-floating my-4">
+                        <p>
+                            <input class="form-control" type="text" value="{{username}}" aria-label="Disabled input example" disabled>
+                        </p>
+                    </div>
+                    <div class="form-floating my-4">
+                        <p>
+                            <input type="password" name="pwd" required
+                            id="id_password" class="form-control" placeholder="Contraseña"/>
+                        </p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <input type="text" name="nombre" id="id_nombre" class="form-control" placeholder="Nombre" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" name="apellido" id="id_apellido" class="form-control" placeholder="Apellido" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="row g-3 my-1">
+                        <div class="col">
+                            <input type="date" name="dob" id="id_dob" class="form-control" placeholder="Fecha Nacimiento" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="email" name="email" id="id_email" class="form-control" placeholder="Mail" required aria-label="Last name">
+                        </div>
+                    </div>
+                    <select class="form-select my-4" name="tipo_cliente" id="id_tipo" required aria-label="Default select example">
+                        <option selected>Tipo Cliente</option>
+                        <option value="CLASSIC">CLASSIC</option>
+                        <option value="GOLD">GOLD</option>
+                        <option value="BLACK">BLACK</option>
+                    </select>
+                    <div class="mx-auto my-5 text-center">
+                        <input type="submit" class="btn rounded-4 text-light ps-5 pe-5 btn-block" style="background-color: #5a407a;" value="Acceder">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
